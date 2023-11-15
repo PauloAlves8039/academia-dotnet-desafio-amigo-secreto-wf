@@ -103,6 +103,7 @@ namespace Academia.DotNet.AmigoSecreto.App.Communications
             Persistencia persistencia = new Persistencia();
             persistencia.LimparConteudoArquivos();
 
+            listaDeAmigos.Clear();
             listView_Amigo.Items.Clear();
             listView_AmigosSecretos.Items.Clear();
         }

@@ -57,7 +57,12 @@ namespace Academia.DotNet.AmigoSecreto.App
 
         private void Btn_GerarAmigoSecreto_Click(object sender, EventArgs e)
         {
-            comunicacao.GerarEExibirAmigoSecreto();
+            DialogResult result = MessageBox.Show("Tem certeza que deseja ver a lista de amigos secretos?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                comunicacao.GerarEExibirAmigoSecreto();
+            }
         }
 
         private void Btn_LimparLista_Click(object sender, EventArgs e)

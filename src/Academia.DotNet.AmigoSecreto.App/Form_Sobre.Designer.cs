@@ -104,6 +104,7 @@
             Controls.Add(label_Sobre);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
             MinimizeBox = false;
             Name = "Form_Sobre";
             StartPosition = FormStartPosition.CenterScreen;

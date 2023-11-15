@@ -170,7 +170,7 @@
             label_ListaAmigosSecreto.AutoSize = true;
             label_ListaAmigosSecreto.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label_ListaAmigosSecreto.ForeColor = Color.White;
-            label_ListaAmigosSecreto.Location = new Point(705, 13);
+            label_ListaAmigosSecreto.Location = new Point(700, 13);
             label_ListaAmigosSecreto.Name = "label_ListaAmigosSecreto";
             label_ListaAmigosSecreto.Size = new Size(140, 21);
             label_ListaAmigosSecreto.TabIndex = 14;
@@ -181,7 +181,7 @@
             label_ListaDeAmigos.AutoSize = true;
             label_ListaDeAmigos.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label_ListaDeAmigos.ForeColor = Color.White;
-            label_ListaDeAmigos.Location = new Point(126, 178);
+            label_ListaDeAmigos.Location = new Point(125, 178);
             label_ListaDeAmigos.Name = "label_ListaDeAmigos";
             label_ListaDeAmigos.Size = new Size(165, 21);
             label_ListaDeAmigos.TabIndex = 13;
@@ -264,7 +264,7 @@
             // 
             // textBox_Email
             // 
-            textBox_Email.Location = new Point(62, 82);
+            textBox_Email.Location = new Point(63, 82);
             textBox_Email.Name = "textBox_Email";
             textBox_Email.Size = new Size(355, 23);
             textBox_Email.TabIndex = 10;
@@ -293,7 +293,7 @@
             // 
             // textBox_Nome
             // 
-            textBox_Nome.Location = new Point(62, 45);
+            textBox_Nome.Location = new Point(63, 45);
             textBox_Nome.Name = "textBox_Nome";
             textBox_Nome.Size = new Size(355, 23);
             textBox_Nome.TabIndex = 7;
