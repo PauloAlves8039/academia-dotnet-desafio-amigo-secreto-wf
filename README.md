@@ -35,13 +35,13 @@ Repositório com desafio em C# para gerenciar lista de amigos secretos, este pro
 
 - O uso de uma barra de progresso na inicialização da aplicação, eu adicionei esse componente para dar um aspecto de execução da aplicação.
 - Criar o formulário de cadastro do amigo com fácil acesso.
-- Adicionar as duas listas no mesmo formualário, a ideia é facilitar a visualização das listas sem que o usuário precise navegar para outra tela.
+- Adicionar as duas listas no mesmo formulário, a ideia é facilitar a visualização das listas sem que o usuário precise navegar para outra tela.
 - O uso de ícones distintos para cada um do botões, o objetivo dessa abordagem foi aplicar uma visualização intuitiva para o usuário identificar cada ação deseja.
 - Os formalários também receberam ícones para uma melhor organização em sua estrutura.
 
 6. O uso de `MessageBox` nas validações dos campos e nas ações de manipulação das listas:
 
-- Nos campos que realizam o cadastro do amigo existem algumas validações do tipo, digitar nome com espaçamento e sobrenome, formato de email válido, se algum desses requisitos não forem atendidos será exibida uma `MessageBox` com alguma mensagem respectiva a validação do campo. 
+- Nos dois campos que realizam o cadastro dos amigos existem algumas validações do tipo, digitar nome com espaçamento e sobrenome, formato de email válido, se algum desses requisitos não forem atendidos será exibida uma `MessageBox` com alguma mensagem respectiva a validação do campo. 
 - Utilizei esse recurso na lista dos pares dos amigos secretos para exibir o conteúdo da lista, inicialmente os pares do amigo secreto não são exibidos na inicialização do projeto, é necessário cadastar amigos e solictar no botão `Gerar Amigo Secreto` e vai aparecer uma `MessageBox` perguntando ao usuário se o mesmo desejar visualizar essa informação.
 - Para a exclusão das listas tanto a dos amigos quanto a dos pares do amigo secreto também é exibida uma `MessageBox` questionando o usuário com essa ação.
 
