@@ -1,10 +1,19 @@
-﻿namespace Academia.DotNet.AmigoSecreto.App
+﻿using Academia.DotNet.AmigoSecreto.App.Communications;
+using Academia.DotNet.AmigoSecreto.App.Models;
+using Academia.DotNet.AmigoSecreto.App.Utils;
+
+namespace Academia.DotNet.AmigoSecreto.App
 {
     public partial class Form_Menu : Form
     {
+        private Comunicacao comunicacao;
+
         public Form_Menu()
         {
             InitializeComponent();
+
+            List<Amigo> listaDeAmigos = new List<Amigo>();
+            comunicacao = new Comunicacao(listaDeAmigos, listView_Amigo, listView_AmigosSecretos);
         }
 
         private void Form_Menu_FormClosed(object sender, FormClosedEventArgs e)
@@ -26,7 +35,19 @@
 
         private void Btn_Adicionar_Click(object sender, EventArgs e)
         {
+            string nome = textBox_Nome.Text;
+            string email = textBox_Email.Text;
 
+            Amigo novoAmigo = new Amigo(nome, email);
+
+            if (!Utilitario.ValidarNome(nome) || !Utilitario.ValidarFormatoDoEmail(email))
+            {
+                return;
+            }
+
+            comunicacao.AdicionarAmigo(novoAmigo);
+
+            LimparCampos();
         }
 
         private void Btn_Cancelar_Click(object sender, EventArgs e)
@@ -36,12 +57,12 @@
 
         private void Btn_GerarAmigoSecreto_Click(object sender, EventArgs e)
         {
-
+            comunicacao.GerarEExibirAmigoSecreto();
         }
 
         private void Btn_LimparLista_Click(object sender, EventArgs e)
         {
-
+            comunicacao.LimparListasComValidacao();
         }
 
         private void Btn_Sair_Click(object sender, EventArgs e)
