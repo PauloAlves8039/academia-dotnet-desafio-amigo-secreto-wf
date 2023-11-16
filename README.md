@@ -2,15 +2,24 @@
 
 ## :computer: Projeto
 
-Repositório com desafio em C# para gerenciar lista de amigos secretos, este projeto tem com propósito realizar o cadastro, exibição da lista de amigos e formar os pares do amigo secreto. O desafio foi proposto durante a Academia DotNet ministrada pela `Universidade Franciscana - UFN`.
-
-## :movie_camera: Vídeo de Demonstração
-
-[Projeto Amigo Secreto - YouTube](https://www.youtube.com/watch?v=mQdRrLL0OUI)
+Repositório com solução de desafio para gerenciar listas relacionadas a realização de um amigo secreto, este projeto tem como propósito criar a formarção dos pares do amigo secreto. O desafio foi proposto durante a Academia DotNet ministrada pela `Universidade Franciscana - UFN`.
 
 ## :page_facing_up: Desafio
 
 [Descrição do Desafio](https://github.com/ricardosma/academia_DotNet_5/blob/main/anotacoesAlexandre/aulas.md)
+
+## :scroll: Funcionalidades
+
+Essa aplicação permite ao usuário:
+
+- Cadastrar `Nome` e `Email` dos amigos que vão participar do `Amigo Secreto`.
+- Visualizar duas listas: `amigos cadastrados` e `pares dos amigos`.
+- Gerar o sorteio aleatório dos pares dos amigos.
+- Remover as listas dos amigos cadastrados e dos pares de amigos.
+
+## :movie_camera: Vídeo de Demonstração
+
+[Projeto Amigo Secreto - YouTube](https://www.youtube.com/watch?v=mQdRrLL0OUI)
 
 ## :white_check_mark: Decisões Técnicas
 
