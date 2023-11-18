@@ -9,6 +9,8 @@
 
 Repositório com solução de desafio para gerenciar listas relacionadas a realização de um amigo secreto, este projeto tem como propósito criar a formarção dos pares do amigo secreto. O desafio foi proposto durante a Academia DotNet ministrada pela `Universidade Franciscana - UFN`.
 
+## :camera: Screenshot
+
 <p align="center"> <img src="https://github.com/PauloAlves8039/academia-dotnet-desafio-amigo-secreto-wf/blob/master/src/Academia.DotNet.AmigoSecreto.App/Resources/images/screenshot.PNG" /></p>
 
 ## :movie_camera: Vídeo de Demonstração
