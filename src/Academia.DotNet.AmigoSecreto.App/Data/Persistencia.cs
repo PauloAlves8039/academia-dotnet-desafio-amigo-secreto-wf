@@ -44,7 +44,7 @@ namespace Academia.DotNet.AmigoSecreto.App.Data
             }
         }
 
-        public List<Tuple<Amigo, Amigo>> LerParesAmigosSecretos()
+        public List<Tuple<Amigo, Amigo>> LerParesDosAmigosSecretos()
         {
             List<Tuple<Amigo, Amigo>> paresAmigosSecretos = new List<Tuple<Amigo, Amigo>>();
 
@@ -75,7 +75,7 @@ namespace Academia.DotNet.AmigoSecreto.App.Data
             return paresAmigosSecretos;
         }
 
-        public void SalvarParesAmigosSecretos(List<Tuple<Amigo, Amigo>> paresAmigosSecretos)
+        public void SalvarParesDosAmigosSecretos(List<Tuple<Amigo, Amigo>> paresAmigosSecretos)
         {
             if (!Directory.Exists(Path.GetDirectoryName(caminhoDoArquivoSecretos)))
             {
@@ -91,13 +91,13 @@ namespace Academia.DotNet.AmigoSecreto.App.Data
                 }
             }
         }
-        public void LimparConteudoArquivos()
+        public void LimparConteudoDosArquivos()
         {
-            LimparConteudoArquivo(caminhoDoArquivoAmigos);
-            LimparConteudoArquivo(caminhoDoArquivoSecretos);
+            LimparConteudoDoArquivo(caminhoDoArquivoAmigos);
+            LimparConteudoDoArquivo(caminhoDoArquivoSecretos);
         }
 
-        private void LimparConteudoArquivo(string caminhoArquivo)
+        private void LimparConteudoDoArquivo(string caminhoArquivo)
         {
             if (File.Exists(caminhoArquivo))
             {

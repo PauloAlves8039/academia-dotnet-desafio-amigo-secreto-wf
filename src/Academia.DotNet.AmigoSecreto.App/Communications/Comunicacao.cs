@@ -67,22 +67,22 @@ namespace Academia.DotNet.AmigoSecreto.App.Communications
                 }
 
                 Persistencia persistencia = new Persistencia();
-                persistencia.SalvarParesAmigosSecretos(paresAmigosSecretos);
+                persistencia.SalvarParesDosAmigosSecretos(paresAmigosSecretos);
 
-                AtualizarListBoxAmigosSecretos(paresAmigosSecretos);
+                AtualizarListBoxDosAmigosSecretos(paresAmigosSecretos);
             }
         }
 
         public void GerarEExibirAmigoSecreto()
         {
             GerarAmigoSecreto();
-            List<Tuple<Amigo, Amigo>> paresAmigosSecretos = persistencia.LerParesAmigosSecretos();
-            AtualizarListBoxAmigosSecretos(paresAmigosSecretos);
+            List<Tuple<Amigo, Amigo>> paresAmigosSecretos = persistencia.LerParesDosAmigosSecretos();
+            AtualizarListBoxDosAmigosSecretos(paresAmigosSecretos);
         }
 
         public void LimparListasComValidacao()
         {
-            if (ListarAmigos().Any() || persistencia.LerParesAmigosSecretos().Any())
+            if (ListarAmigos().Any() || persistencia.LerParesDosAmigosSecretos().Any())
             {
                 DialogResult resultado = MessageBox.Show("Tem certeza que deseja limpar as listas?", "Confirmação",
                                               MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -101,7 +101,7 @@ namespace Academia.DotNet.AmigoSecreto.App.Communications
         private void LimparListas()
         {
             Persistencia persistencia = new Persistencia();
-            persistencia.LimparConteudoArquivos();
+            persistencia.LimparConteudoDosArquivos();
 
             listaDeAmigos.Clear();
             listView_Amigo.Items.Clear();
@@ -134,18 +134,17 @@ namespace Academia.DotNet.AmigoSecreto.App.Communications
             listView_Amigo.Items.Add(item);
         }
 
-        private void AtualizarListBoxAmigosSecretos(List<Tuple<Amigo, Amigo>> paresAmigosSecretos)
+        private void AtualizarListBoxDosAmigosSecretos(List<Tuple<Amigo, Amigo>> paresAmigosSecretos)
         {
-
             listView_AmigosSecretos.Items.Clear();
 
             foreach (var par in paresAmigosSecretos)
             {
-                AdicionarParAmigosAoListView(par.Item1, par.Item2);
+                AdicionarParesDosAmigosAoListView(par.Item1, par.Item2);
             }
         }
 
-        private void AdicionarParAmigosAoListView(Amigo amigo1, Amigo amigo2)
+        private void AdicionarParesDosAmigosAoListView(Amigo amigo1, Amigo amigo2)
         {
             ListViewItem item = new ListViewItem();
 
