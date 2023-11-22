@@ -52,7 +52,7 @@
             // pictureBox_Inicio
             // 
             pictureBox_Inicio.Dock = DockStyle.Fill;
-            pictureBox_Inicio.Image = Properties.Resources.presente1;
+            pictureBox_Inicio.Image = Properties.Resources.presente;
             pictureBox_Inicio.Location = new Point(0, 0);
             pictureBox_Inicio.Name = "pictureBox_Inicio";
             pictureBox_Inicio.Size = new Size(368, 199);
